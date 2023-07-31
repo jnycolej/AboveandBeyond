@@ -6,7 +6,8 @@ body {
     font: 1rem/1.5 var(--bs-font-sans-serif);
 }
 
-ul {
-    
+.nav-list li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
 }
 
