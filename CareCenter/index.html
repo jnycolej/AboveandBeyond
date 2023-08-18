@@ -50,10 +50,10 @@
             <img class="d-block mx-auto mb-4" src="assets/AboveCareCenter.svg" alt="" width="300" height="300">
             <h1 class="display-5 fw-bold text-body-emphasis">Welcome</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Site under construction</p>
+              <p class="lead mb-4">Coming Soon</p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">About Us</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+                <button id="about" type="button" class="btn btn-primary btn-lg px-4 gap-3">About Us</button>
+                <button id="contact" type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
               </div>
             </div>
           </div>
@@ -73,6 +73,18 @@
               <p class="text-center text-body-secondary">&copy; 2023 Above and Beyond Social Services , LLC</p>
             </footer>
           </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </body>
+        <script>
+          document.getElementById("about").onclick = function () {
+            location.href = "public/aboutus.html";
+          };
+
+          document.getElementById("contact").onclick = function () {
+            location.href = "public/contactus.html";
+          };
+
+        </script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+      </body>
 </html>
